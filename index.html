@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age and BMI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+        <div id="age">
+            <h1>Age Calculator</h1>
+            <form action="" onsubmit="event.preventDefault()" class="ageform">
+                <label for="Month">Month</label><br>
+                <input id="month" type="text" placeholder="MM" required>
+                <label for="Day" ></label>Day</label><br>
+                <input type="text" id="day" placeholder="DD" required>
+                <label for="Year" ></label>Year</label><br>
+                <input type="text" id="year" placeholder="YYYY" required>
+                <button id="age-submit">Submit</button>
+            </form>
+            <p id="age-value"></p>
+        </div>
+        <div id="bmi">
+            <h1>BMI Calculator</h1>
+
+   
+            <div id="bmi-form-container">
+                <form action="" onsubmit="event.preventDefault()" >
+                    <div id="top-row">
+                        <div id="gender">
+                            <p>Please select your gender:</p>
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label><br>
+                        </div>
+                        <div id="bmi-age">
+                            <label for="">Age</label>
+                            <input type="text" placeholder="" required>
+                        </div>
+                    </div>
+                    <div id="form-inputs">
+                        <label for="">Height(inches)</label><br>
+                        <input type="text" placeholder="height" id="height" required>
+                        <label for="">Weight(lb)</label>
+                        <input type="text" placeholder="weight" id="weight" required>
+                    </div>
+                    <button id="bmi-submit">Submit</button>
+                </form>
+            </div> 
+            <p id="bmi-value"></p>  
+        </div>
+    </section>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
